@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>kronos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>kronos</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>
+    <a href="#planets" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Planets</a>
+    <a href="#status" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Program Status</a>
+    <a href="#coord" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coordinated Programs</a>
+    <a href="#docs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Documentation</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>kronos</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="team">
+    <h1 class="w3-jumbo"><b>kronos</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>A collaboration to observe the atmospheres of young exoplanets with JWST.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+  </div>
+
+Mature sub-Neptune-sized planets with hydrogen/helium atmospheres (from 2.5 - 4 R<sub>Earth</sub>)
+are common but remain enigmatic due to predominantly cloudy, featureless near-infrared spectra.
+With this JWST Cycle 3 program, we will investigate young sub-Neptunes (< 200 Myr), which so
+far have shown preferentially clear atmospheres favorable for transmission spectroscopy. Within
+this large program we will:
+
+<ul>
+  <li>Determine if sub-Neptune atmospheric metallicity if primordial. Sub-Neptunes could form
+      with high atmospheric metallicities or they may evolve to be metal-rich through photoevaporation,
+      photochemistry, and planetary bombardment.</li>
+  <li>Determine whether sub-Neptunes are water enriched or depleted. Depending on their
+      formation location, they could be either "gas dwarfs" with water-depleted atmospheres
+      and rocky cores, or "water worlds" with water-enriched atmospheres and ice/rock cores.</li>
+  <li>Analyze the homogeneity of multi-sub-Neptune systems. Depending on formation histories, planets
+      in the same system may be all water worlds, gas dwarfs, or some combination of both.
+</ul>
+
+To achieve our science goals, we will observe seven sub-Neptunes in three systems to fully characterize
+all known 3+ multi-sub-Neptune systems orbiting young solar analogues. Our sample will answer questions
+about intra- and extra-system diversity for the first time. All planets will be observed with NIRISS/SOSS
+and NIRSpec/G395H to obtain high signal-to-noise broad infrared spectra for our sample. You can learn
+more about our planets <a href="#planets">here</a> and the status of our program <a href="#status">here</a>.
+
+  <!-- Services -->
+  <div class="w3-container" id="team" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>The Team.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Meet the people behind the program.</p>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/feinstein_headshot.png" alt="Adina" style="width:100%">
+          <div class="w3-container">
+            <h3>Adina Feinstein</h3>
+            <p class="w3-opacity">Principal Investigator</p>
+            <p>Michigan State University</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/welbanks_headshot.png" alt="Luis" style="width:100%">
+          <div class="w3-container">
+            <h3>Luis Welbanks</h3>
+            <p class="w3-opacity">Co-Principal Investigator</p>
+            <p>Arizona State University</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/ahrer_headshot.jpg" alt="Eva-Maria" style="width:100%">
+          <div class="w3-container">
+            <h3>Eva-Maria Ahrer</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>MPIA</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/alderson_headshot.jpg" alt="Lili" style="width:100%">
+          <div class="w3-container">
+            <h3>Lili Alderson</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Cornell University</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/barat_headshot.jpg" alt="Saugata" style="width:100%">
+          <div class="w3-container">
+            <h3>Saugata Barat</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Amsterdam</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/brande_headshot.jpg" alt="Jonathan" style="width:100%">
+          <div class="w3-container">
+            <h3>Jonathan Brande</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Kansas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/crossfield_headshot.png" alt="Ian" style="width:100%; height=100px">
+          <div class="w3-container">
+            <h3 style="font-size:22px">Ian Crossfield</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Kansas</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/desert_headshot.jpg" alt="Jean-Michel" style="width:100%">
+          <div class="w3-container">
+            <h3 style="font-size:22px">Jean-Michel Désert</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Amsterdam</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/duvvuri_headshot.jpg" alt="Girish" style="width:100%">
+          <div class="w3-container">
+            <h3>Girish Duvvuri</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Vanderbilt University</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/espinoza_headshot.jpg" alt="Nestor" style="width:100%">
+          <div class="w3-container">
+            <h3>Néstor Espinoza</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>STScI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/france_headshot.jpg" alt="Kevin" style="width:100%">
+          <div class="w3-container">
+            <h3>Kevin France</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p style="font-size:14px">University of Colorado Boulder</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/gao_headshot.png" alt="Peter" style="width:100%">
+          <div class="w3-container">
+            <h3>Peter Gao</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Carnegie EPL</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/guzman_headshot.jpg" alt="Giannina" style="width:100%">
+          <div class="w3-container">
+            <h3 style="font-size:18px">Giannina Guzmàn Caloca</h3>
+            <p class="w3-opacity" style="font-size:14px">Co-Investigator</p>
+            <p style="font-size:14px">University of Maryland</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/levine_headshot.png" alt="Garrett" style="width:100%">
+          <div class="w3-container">
+            <h3>W. Garrett Levine</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Yale University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/livingston_headshot.png" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>John Livingston</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p style="font-size:14px">National Astronomical Observatory of Japan</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/lunine_headshot.jpg" alt="Jonathan" style="width:100%">
+          <div class="w3-container">
+            <h3>Jonathan Lunine</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Cornell University</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/luque_headshot.jpg" alt="Rafael" style="width:100%">
+          <div class="w3-container">
+            <h3>Rafael Luque</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Chicago</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/mann_headshot.png" alt="Andrew" style="width:100%">
+          <div class="w3-container">
+            <h3>Andrew Mann</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of North Carolina Chapel Hill</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/mukherjee_headshot.png" alt="Sagnick" style="width:100%">
+          <div class="w3-container">
+            <h3 style="font-size:22px">Sagnick Mukherjee</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>UC Santa Cruz</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/murray_headshot.png" alt="Catriona" style="width:100%">
+          <div class="w3-container">
+            <h3>Catriona Murray</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p style="font-size:14px">University of Colorado at Boulder</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/owen_headshot.png" alt="James" style="width:100%">
+          <div class="w3-container">
+            <h3>James Owen</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Imperial College London</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/rackham_headshot.png" alt="Benjamin" style="width:100%">
+          <div class="w3-container">
+            <h3 style="font-size:22px">Benjamin Rackham</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>MIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/radica_headshot.png" alt="Michael" style="width:100%">
+          <div class="w3-container">
+            <h3>Michael Radica</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Chicago</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/rockcliffe_headshot.png" alt="Keighley" style="width:100%">
+          <div class="w3-container">
+            <h3 style="font-size:20px">Keighley Rockcliffe</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Dartmouth University</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/rogers_headshot.png" alt="Leslie" style="width:100%">
+          <div class="w3-container">
+            <h3>Leslie Rogers</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>University of Chicago</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/seager_headshot.jpg" alt="Sara" style="width:100%">
+          <div class="w3-container">
+            <h3>Sara Seager</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>MIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/shapiro_headshot.png" alt="Alexander" style="width:100%">
+          <div class="w3-container">
+            <h3>Alexander Shapiro</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>MPISSR</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/seligman_headshot.png" alt="Darryl" style="width:100%">
+          <div class="w3-container">
+            <h3>Darryl Seligman</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Michigan State University</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/thao_headshot.png" alt="Pa Chia" style="width:100%">
+          <div class="w3-container">
+            <h3>Pa Chia Thao</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p style="font-size:14px">University of North Carolina Chapel Hill</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./headshots/vissapragada_headshot.jpg" alt="Shreyas" style="width:100%">
+          <div class="w3-container">
+            <h3 style="font-size:20px">Shreyas Vissapragada</h3>
+            <p class="w3-opacity">Co-Investigator</p>
+            <p>Harvard University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="planets" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>The Planets.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>We compiled a sample of seven young sub-Neptune progenitors to understand how this
+       ubiquitous population forms and evolves. We list the properties of our planets and
+       their host stars here.
+     </p>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">V1298 Tau c</li>
+          <li class="w3-padding-16">Age: 23 &plusmn; 4 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2019AJ....158...79D/abstract">1</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 5.05 &plusmn; 0.14 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+          <li class="w3-padding-16">Period: 8.2438 &plusmn; 0.0020 days [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 968 &plusmn; 31 K [<a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...885L..12D/abstract">3</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 1.33 &plusmn; 0.04 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+          <li class="w3-padding-16">Stellar Mass: 1.095 &plusmn; 0.048 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">V1298 Tau d</li>
+          <li class="w3-padding-16">Age: 23 &plusmn; 4 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2019AJ....158...79D/abstract">1</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 6.13 &plusmn; 0.28 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+          <li class="w3-padding-16">Period: 12.3960 &plusmn; 0.0020 days [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 845 &plusmn; 27 K [<a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...885L..12D/abstract">3</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 1.33 &plusmn; 0.04 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+          <li class="w3-padding-16">Stellar Mass: 1.095 &plusmn; 0.048 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-blue w3-xlarge w3-padding-32">TOI 451 c</li>
+          <li class="w3-padding-16">Age: 120 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 3.10 &plusmn; 0.13 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Period: 9.192402 &plusmn; 0.000064 days [<a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265....4K/abstract">5</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 875 &plusmn; 12 K [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 0.88 &plusmn; 0.03 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Stellar Mass: 0.95 &plusmn; 0.02 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-blue w3-xlarge w3-padding-32">TOI 451 d</li>
+          <li class="w3-padding-16">Age: 120 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 4.07 &plusmn; 0.15 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Period: 16.364909 &plusmn; 0.000043 days [<a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265....4K/abstract">5</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 722 &plusmn; 10 K [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 0.88 &plusmn; 0.03 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+          <li class="w3-padding-16">Stellar Mass: 0.95 &plusmn; 0.02 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">TOI 2076 b</li>
+          <li class="w3-padding-16">Age: 204 &plusmn; 50 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 2.52 &plusmn; 0.04 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Period: 10.355489 &plusmn; 0.000032	days [<a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265....4K/abstract">5</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 797 &plusmn; 12 K [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 0.76 &plusmn; 0.02 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>] </li>
+          <li class="w3-padding-16">Stellar Mass: 0.85 &plusmn; 0.03 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">TOI 2076 c</li>
+          <li class="w3-padding-16">Age: 204 &plusmn; 50 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 3.50 &plusmn; 0.04	 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Period: 21.01538 &plusmn; 0.00078 days [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 630 &plusmn; 9 K [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 0.76 &plusmn; 0.02 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>] </li>
+          <li class="w3-padding-16">Stellar Mass: 0.85 &plusmn; 0.03 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">TOI 2076 d</li>
+          <li class="w3-padding-16">Age: 204 &plusmn; 50 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
+          <li class="w3-padding-16">Planet Radius: 3.23 &plusmn; 0.6 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Period: 35.12537 &plusmn; 0.00067 days [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Equilibrium Temperature: 530 &plusmn; 7 K [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
+          <li class="w3-padding-16">Stellar Radius: 0.76 &plusmn; 0.02 R<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>] </li>
+          <li class="w3-padding-16">Stellar Mass: 0.85 &plusmn; 0.03 M<sub>Sun</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Co-Investigators -->
+  <div class="w3-container" id="status" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Program Status.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our Co-Investigators are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="coord" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Coordinated Observations.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+
+  <!-- Contact -->
+  <div class="w3-container" id="docs" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Data Product Documentation.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>
+      We will upload all intermediate and final data products to Zenodo. Check back
+      here for documentation on where to find these data products, and how to read
+      and use them once they're created!
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact us.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>
+      Questions on our program? Feel free to get in touch with us:
+      adina.feinstein [at] lasp.colorado.edu.
+    </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
