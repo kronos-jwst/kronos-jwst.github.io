@@ -16,19 +16,20 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;background-color:#005c7b"
+     id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>kronos</b></h3>
+    <h3 class="w3-padding-64 w3-text-white"><b>kronos</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a>
-    <a href="#planets" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Planets</a>
-    <a href="#status" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Program Status</a>
-    <a href="#coord" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coordinated Programs</a>
-    <a href="#docs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Documentation</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Home</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Team</a>
+    <a href="#planets" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Planets</a>
+    <a href="#status" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Program Status</a>
+    <a href="#coord" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Coordinated Programs</a>
+    <a href="#docs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Documentation</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-white">Contact</a>
   </div>
 </nav>
 
@@ -47,8 +48,8 @@ body {font-size:16px;}
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="team">
     <h1 class="w3-jumbo"><b>kronos</b></h1>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>A collaboration to observe the atmospheres of young exoplanets with JWST.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>A collaboration to observe the atmospheres of young exoplanets with JWST.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
   </div>
 
 Mature sub-Neptune-sized planets with hydrogen/helium atmospheres (from 2.5 - 4 R<sub>Earth</sub>)
@@ -76,8 +77,8 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
   <!-- Services -->
   <div class="w3-container" id="team" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>The Team.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>The Team.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
     <p>Meet the people behind the program.</p>
 
     <div class="w3-row-padding w3-grayscale">
@@ -411,8 +412,8 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
   <!-- Services -->
   <div class="w3-container" id="planets" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>The Planets.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>The Planets.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
     <p>We compiled a sample of seven young sub-Neptune progenitors to understand how this
        ubiquitous population forms and evolves. We list the properties of our planets and
        their host stars here.
@@ -421,7 +422,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
     <div class="w3-row-padding">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">V1298 Tau c</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#f6d093">V1298 Tau c</li>
           <li class="w3-padding-16">Age: 23 &plusmn; 4 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2019AJ....158...79D/abstract">1</a>]</li>
           <li class="w3-padding-16">Planet Radius: 5.05 &plusmn; 0.14 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
           <li class="w3-padding-16">Period: 8.2438 &plusmn; 0.0020 days [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
@@ -433,7 +434,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
       <div class="w3-half">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">V1298 Tau d</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#f6d093">V1298 Tau d</li>
           <li class="w3-padding-16">Age: 23 &plusmn; 4 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2019AJ....158...79D/abstract">1</a>]</li>
           <li class="w3-padding-16">Planet Radius: 6.13 &plusmn; 0.28 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
           <li class="w3-padding-16">Period: 12.3960 &plusmn; 0.0020 days [<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract">2</a>]</li>
@@ -447,7 +448,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
     <div class="w3-row-padding">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-blue w3-xlarge w3-padding-32">TOI 451 c</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#9ceced">TOI 451 c</li>
           <li class="w3-padding-16">Age: 120 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
           <li class="w3-padding-16">Planet Radius: 3.10 &plusmn; 0.13 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
           <li class="w3-padding-16">Period: 9.192402 &plusmn; 0.000064 days [<a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265....4K/abstract">5</a>]</li>
@@ -459,7 +460,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
       <div class="w3-half">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-blue w3-xlarge w3-padding-32">TOI 451 d</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#9ceced">TOI 451 d</li>
           <li class="w3-padding-16">Age: 120 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
           <li class="w3-padding-16">Planet Radius: 4.07 &plusmn; 0.15 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161...65N/abstract">4</a>]</li>
           <li class="w3-padding-16">Period: 16.364909 &plusmn; 0.000043 days [<a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265....4K/abstract">5</a>]</li>
@@ -473,7 +474,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
     <div class="w3-row-padding">
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">TOI 2076 b</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#f6d093">TOI 2076 b</li>
           <li class="w3-padding-16">Age: 204 &plusmn; 50 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
           <li class="w3-padding-16">Planet Radius: 2.52 &plusmn; 0.04 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
           <li class="w3-padding-16">Period: 10.355489 &plusmn; 0.000032	days [<a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265....4K/abstract">5</a>]</li>
@@ -485,7 +486,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
       <div class="w3-third">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">TOI 2076 c</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#f6d093">TOI 2076 c</li>
           <li class="w3-padding-16">Age: 204 &plusmn; 50 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
           <li class="w3-padding-16">Planet Radius: 3.50 &plusmn; 0.04	 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
           <li class="w3-padding-16">Period: 21.01538 &plusmn; 0.00078 days [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
@@ -497,7 +498,7 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
       <div class="w3-third">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">TOI 2076 d</li>
+          <li class="w3-xlarge w3-padding-32" style="background-color:#f6d093">TOI 2076 d</li>
           <li class="w3-padding-16">Age: 204 &plusmn; 50 Myr [<a href="https://ui.adsabs.harvard.edu/abs/2021AJ....162...54H/abstract">6</a>]</li>
           <li class="w3-padding-16">Planet Radius: 3.23 &plusmn; 0.6 R<sub>Earth</sub> [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
           <li class="w3-padding-16">Period: 35.12537 &plusmn; 0.00067 days [<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.156O/abstract">7</a>]</li>
@@ -513,8 +514,8 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
   <!-- Co-Investigators -->
   <div class="w3-container" id="status" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Program Status.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>Program Status.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
     <p>The best team in the world.</p>
     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -525,16 +526,16 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
   <!-- Packages / Pricing Tables -->
   <div class="w3-container" id="coord" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Coordinated Observations.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>Coordinated Observations.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
   </div>
 
 
   <!-- Contact -->
   <div class="w3-container" id="docs" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Data Product Documentation.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>Data Product Documentation.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
     <p>
       We will upload all intermediate and final data products to Zenodo. Check back
       here for documentation on where to find these data products, and how to read
@@ -544,8 +545,8 @@ more about our planets <a href="#planets">here</a> and the status of our program
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact us.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color:#005c7b"><b>Contact us.</b></h1>
+    <hr style="width:50px;border:5px solid" class="w3-round">
     <p>
       Questions on our program? Feel free to get in touch with us:
       adina.feinstein [at] lasp.colorado.edu.
